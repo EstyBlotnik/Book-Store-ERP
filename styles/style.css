@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+.grayNav{
+    background-color: rgb(218, 218, 218);
+    padding: 12px;
+    color: rgb(66, 66, 66);
+}
+.blackNav{
+    background-color: rgba(55, 45, 45, 0.916);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.newBook{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+}
+table {
+    width: 100%;  /* מגדיר שהטבלה תשתמש בכל רוחב האלמנט */
+    border-collapse: collapse;
+}
+th{
+    padding: 10px;
+    border: solid white;
+    background-color: rgba(128, 128, 128, 0.726);
+}
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}

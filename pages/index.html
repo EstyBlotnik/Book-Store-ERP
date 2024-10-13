@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <nav class="grayNav"><span class="grayText">BookShop ERP</span></nav>
+    <nav class="blackNav">
+        <div class="addBook">
+            <button class="newBook">+ new book</button>
+        </div>
+        <div class="loadData">
+            <button class="newBook">load Data</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="dataTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="bookesTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script type="module" src="../functions/index.js"></script>
+
+</html>
