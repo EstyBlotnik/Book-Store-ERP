@@ -18,56 +18,56 @@
             "id": 3,
             "title": "מדריך למי שמרגיש תקוע",
             "price": 29.9,
-            "image": "https://example.com/images/books/book3.jpg",
+            "image": "../images/istockphoto-2060074942-1024x1024.jpg",
             "rating": 7
         },
         {
             "id": 4,
             "title": "עולם חדש ומוזר",
             "price": 59.9,
-            "image": "https://example.com/images/books/book4.jpg",
+            "image": "../images/istockphoto-2060984408-1024x1024.jpg",
             "rating": 9
         },
         {
             "id": 5,
             "title": "חיים ללא גבולות",
             "price": 34.9,
-            "image": "https://example.com/images/books/book5.jpg",
+            "image": "../images/book-1283865_1280.jpg",
             "rating": 10
         },
         {
             "id": 6,
             "title": "סודות היקום",
             "price": 42.9,
-            "image": "https://example.com/images/books/book6.jpg",
+            "image": "../images/istockphoto-182053674-1024x1024.jpg",
             "rating": 8
         },
         {
             "id": 7,
             "title": "שיחות עם אלוהים",
             "price": 38.9,
-            "image": "https://example.com/images/books/book7.jpg",
+            "image": "../images/istockphoto-2060074942-1024x1024.jpg",
             "rating": 9
         },
         {
             "id": 8,
             "title": "ההיסטוריה של העולם",
             "price": 54.9,
-            "image": "https://example.com/images/books/book8.jpg",
+            "image": "../images/istockphoto-2060984408-1024x1024.jpg",
             "rating": 7
         },
         {
             "id": 9,
             "title": "המסע אל האושר",
             "price": 44.9,
-            "image": "https://example.com/images/books/book9.jpg",
+            "image": "../images/book-1283865_1280.jpg",
             "rating": 9
         },
         {
             "id": 10,
             "title": "מדריך לסודות ההצלחה",
             "price": 37.9,
-            "image": "https://example.com/images/books/book10.jpg",
+            "image": "../images/istockphoto-2060984408-1024x1024.jpg",
             "rating": 8
         }
     ]
