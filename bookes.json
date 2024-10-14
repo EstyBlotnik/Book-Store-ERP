@@ -4,14 +4,14 @@
             "id": 1,
             "title": "חיים של אוסף",
             "price": 49.9,
-            "image": "https://example.com/images/books/book1.jpg",
+            "image": "../images/book-1283865_1280.jpg",
             "rating": 8
         },
         {
             "id": 2,
             "title": "תורת המשחקים",
             "price": 39.9,
-            "image": "https://example.com/images/books/book2.jpg",
+            "image": "../images/istockphoto-182053674-1024x1024.jpg",
             "rating": 9
         },
         {
