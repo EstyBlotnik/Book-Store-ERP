@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/popup.css"> <!-- נגע בעיצוב בהמשך -->
 </head>
 
 <body>
     <nav class="grayNav"><span class="grayText">BookShop ERP</span></nav>
     <nav class="blackNav">
         <div class="addBook">
-            <button class="newBook">+ new book</button>
+            <button class="newBook" id="openPopup">+ new book</button>
         </div>
         <div class="loadData">
             <button class="newBook">load Data</button>
@@ -40,7 +41,7 @@
                 <h3>חיים של אוסף</h3>
             </div>
             <div class="bookInfo">
-                <div class="imgFrame"><img src="../images/book-1283865_1280.jpg"></div>
+                <div class="imgFrame"><img src="../images/hadasa.jpg"></div>
                 <div class="priceAndRate">
                     <span class="Price"> price: $ 49.9</span>
                     <div class="rating-container">
@@ -54,7 +55,35 @@
             </div>
         </div>
     </div>
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h1>+ New book</h1>
+            <h2>- - - - - - - - - - - - - - - - -</h2>
+            <form id="newBookForm">
+                <label>
+                    ID:
+                    <input type="number" name="_id">
+                </label>
+                <label>
+                    Title:
+                    <input type="text" name="title">
+
+                </label>
+                <label>
+                    Price (by $):
+                    <input type="number" name="price">
+                </label>
+                <label>
+                    Book cover URL
+                    <input type="text" name="cover">
+                </label>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </div>
 </body>
 <script type="module" src="../functions/index.js"></script>
+<script src="../functions/popup.js"></script> <!-- נגע בפעולה של הכפתור בהמשך -->
 
 </html>

@@ -3,8 +3,11 @@ body{
 }
 .grayNav{
     background-color: rgb(218, 218, 218);
-    padding: 12px;
+    padding: 12px 5%;
     color: rgb(66, 66, 66);
+}
+.grayText{
+    font-size: 40px;
 }
 .blackNav{
     background-color: rgba(55, 45, 45, 0.916);
@@ -39,7 +42,12 @@ td {
 }
 button{
     border: none;
-    background-color: #dddddd00;
+    background-color: #dddddd18;
+    padding: 5px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #dddddd61;
 }
 .sideBook{
     width: 30%;
@@ -55,17 +63,17 @@ button{
 }
 
 .imgFrame{
-    width: 60%;
+    width: 40%;
 }
 .imgFrame img{
     width: 100%;
+    border: solid rgba(0, 0, 0, 0.082);
 }
 
 .priceAndRate {
-    width: 40%;
     display: flex;
     flex-direction: column; /* מסדר את המחיר והדירוג אחד מתחת לשני */
-    justify-content: space-between; /* מרכז אנכית את התוכן */
+    justify-content: space-around; /* מרכז אנכית את התוכן */
     padding: 20px;
     text-align: left;
 }
@@ -90,4 +98,22 @@ button{
     background-color: green;
     width: 0;
     border-radius: 10px;
+}
+
+#newBookForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50%;
+    gap: 30px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+input{
+    width: 100%;
+    min-height: 22px;
 }
