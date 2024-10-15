@@ -1,30 +1,65 @@
 .popup {
-    display: flex; /* כדי למרכז את התוכן */
-    justify-content:flex-end;
-    position: fixed; /* כדי שה-popup יישאר באותו מקום */
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    z-index: 1000; /* מעל כל התוכן האחר */
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1000;
+    /* מעל כל התוכן האחר */
 }
 
 .popup-content {
-    background-color: rgba(0, 0, 0, 0.799); /* רקע חצי שקוף */
+    max-height: 95vh;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.799);
+    /* רקע חצי שקוף */
     color: white;
     padding: 20px;
     border-radius: 5px;
-    width: 270px; /* רוחב קבוע לחלון */
+    width: 270px;
+    /* רוחב קבוע לחלון */
     text-align: center;
-    padding: 80px;
+    padding: 15px 80px;
 }
 
-.hidden {
-    display: none; /* מחבא את החלון ברירת מחדל */
-}
-
-.close{
-    cursor: pointer; /* משנה את סמן העכבר */
+.close {
+    cursor: pointer;
+    /* משנה את סמן העכבר */
     float: right;
     font-size: 20px;
+}
+
+.rating-slider {
+    display: flex;
+    align-items: center;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
 }

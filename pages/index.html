@@ -13,7 +13,7 @@
     <nav class="grayNav"><span class="grayText">BookShop ERP</span></nav>
     <nav class="blackNav">
         <div class="addBook">
-            <button class="newBook" id="openPopup">+ new book</button>
+            <button class="newBook" id="newBook">+ new book</button>
         </div>
         <div class="loadData">
             <button class="newBook">load Data</button>
@@ -55,35 +55,7 @@
             </div>
         </div>
     </div>
-    <div id="popup" class="popup hidden">
-        <div class="popup-content">
-            <span id="closePopup" class="close">&times;</span>
-            <h1>+ New book</h1>
-            <h2>- - - - - - - - - - - - - - - - -</h2>
-            <form id="newBookForm">
-                <label>
-                    ID:
-                    <input type="number" name="_id">
-                </label>
-                <label>
-                    Title:
-                    <input type="text" name="title">
-
-                </label>
-                <label>
-                    Price (by $):
-                    <input type="number" name="price">
-                </label>
-                <label>
-                    Book cover URL
-                    <input type="text" name="cover">
-                </label>
-                <input type="submit" id="submit">
-            </form>
-        </div>
-    </div>
+    <div id="placeForPopup"></div>
 </body>
 <script type="module" src="../functions/index.js"></script>
-<script src="../functions/popup.js"></script> <!-- נגע בפעולה של הכפתור בהמשך -->
-
 </html>
