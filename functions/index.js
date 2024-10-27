@@ -204,13 +204,11 @@ function addForm(key=null,value=null){
         }
     });
     let bookesOrder = JSON.parse(localStorage.getItem("bookesOrder")) || [];
-    console.log("before");
-    console.log(bookData);
-    console.log(bookesOrder);
-    bookesOrder.push(bookId);
-    console.log("after");
-    
-    console.log(bookesOrder);
+    const bookIdNumber = Number(bookId); // המרה למספר
+
+    if (!bookesOrder.includes(bookIdNumber)) {
+        bookesOrder.push(bookIdNumber);
+    }
     localStorage.setItem("bookesOrder", JSON.stringify(bookesOrder));
     localStorage.setItem(bookId,JSON.stringify(bookData))
     reshowWindow();
