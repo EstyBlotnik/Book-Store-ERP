@@ -32,6 +32,42 @@ function reshowWindow() {
 
     });
 }
+
+function sortAndDisplayByTitle() {
+    let bookesOrder = JSON.parse(localStorage.getItem("bookesOrder")) || [];
+    bookesOrder.sort((a, b) => {
+        const bookA = JSON.parse(localStorage.getItem(a));
+        const bookB = JSON.parse(localStorage.getItem(b));
+        if (bookA && bookB) {
+            return bookA.title.localeCompare(bookB.title);
+        }
+        return 0;
+    });
+    localStorage.setItem("bookesOrder", JSON.stringify(bookesOrder));
+    reshowWindow();
+}
+
+function sortAndDisplayByPrice() {
+    let bookesOrder = JSON.parse(localStorage.getItem("bookesOrder")) || [];
+    bookesOrder.sort((a, b) => {
+        const bookA = JSON.parse(localStorage.getItem(a));
+        const bookB = JSON.parse(localStorage.getItem(b));
+        if (bookA && bookB) {
+            return bookA.price - bookB.price;
+        }
+        return 0;
+    });
+    localStorage.setItem("bookesOrder", JSON.stringify(bookesOrder));
+    reshowWindow();
+}
+
+document.getElementById("sortByTitle").addEventListener("click", function () {
+    sortAndDisplayByTitle();
+});
+document.getElementById("sortByPrice").addEventListener("click", function () {
+    sortAndDisplayByPrice();
+});
+
 function initialization() {
     console.log("loading");
     console.log(products.books);

@@ -49,6 +49,10 @@ button{
 button:hover{
     background-color: #dddddd61;
 }
+#sortByTitle,
+#sortByPrice{
+    background-color: #dddddd00;
+}
 .sideBook{
     width: 30%;
 }
